@@ -35,3 +35,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### H2 런타임 DB 파일 (실행할 때마다 자동 생성됨, 깃에 올릴 필요 없음) ###
+data/
+*.mv.db
+*.trace.db
+*.lock.db
