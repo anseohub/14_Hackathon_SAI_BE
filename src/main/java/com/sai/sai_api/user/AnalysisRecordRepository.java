@@ -1,0 +1,11 @@
+package com.sai.sai_api.user;
+
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface AnalysisRecordRepository extends JpaRepository<AnalysisRecord, Long> {
+    List<AnalysisRecord> findByUserIdOrderByCreatedAtDesc(Long userId, Pageable pageable);
+    void deleteByUserId(Long userId);
+}
