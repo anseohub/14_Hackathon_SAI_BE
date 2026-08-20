@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/train")
+@CrossOrigin(origins = "*")
 @RequiredArgsConstructor
 public class TrainController {
     private final TrainService trainService;
